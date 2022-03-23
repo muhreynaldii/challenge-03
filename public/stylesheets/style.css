@@ -41,7 +41,7 @@ a {
   padding-right: 55px !important;
 }
 
-.form-content button {
+.form-content button.btn.btn-primary {
   width: 100%;
   background: #0d28a6;
   border-radius: 2px;
@@ -55,7 +55,6 @@ a {
   font-size: 14px;
   line-height: 20px;
   /* identical to box height, or 143% */
-
   color: #222222;
 }
 
@@ -65,57 +64,3 @@ a {
   box-sizing: border-box;
   border-radius: 5px;
 }
-
-/* Kelompok 3 */
-
-body {
-  /* font-family: Hevetica; */
-  font-size: 14px;
-  font-weight: lighter;
-}
-
-thead {
-  background: #cfd4ed;
-}
-
-.drop .form-select {
-  width: 62px;
-  height: 36px;
-  font-size: 12px;
-}
-
-.jtp .form-select {
-  width: 76px;
-  height: 36px;
-  font-size: 12px;
-}
-.paging nav {
-  display: flex;
-  justify-content: flex-end;
-}
-
-a.page-link {
-  height: 38px;
-  width: 38px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  color: #8a8a8a;
-}
-.page-item.active .page-link {
-  background: #cfd4ed;
-  color: #0d28a6;
-  border-color: #0d28a6;
-}
-.form-select {
-  display: inline;
-}
-.btn {
-  display: inline;
-  background: #0d28a6;
-  color: #fff;
-  width: 43px;
-  height: 36px;
-}
-
-/* END Kelompok 3 */

@@ -1,19 +1,13 @@
-var express = require('express');
+var express = require("express");
 var router = express.Router();
 
 /* GET home page. */
-router.get('/', function (req, res, next) {
-  res.render('index');
+router.get("/", function (req, res) {
+  res.render("index");
 });
 
-router.get('/dashboard', function (req, res, next) {
-  res.render('error', {
-    message: 'Ini Error',
-    error: {
-      status: 404,
-      stack: 'Ini Stack',
-    },
-  });
+router.get("/dashboard", function (req, res) {
+  res.render("dashboard");
 });
 
 module.exports = router;
