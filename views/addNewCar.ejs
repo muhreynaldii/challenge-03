@@ -1,120 +1,116 @@
 <!DOCTYPE html>
 <html>
-<%- include('layouts/head') %>
-    <%- include('layouts/navbar') %>
 
-        <body>
-            <section id="page-5">
-                <div class="container pt-4">
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="sub-tree d-flex mt-3 mb-3">
-                                <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);"
-                                    aria-label="breadcrumb">
-                                    <ol class="breadcrumb">
-                                        <li class="breadcrumb-item" aria-current="page">Cars</li>
-                                        <li class="breadcrumb-item" aria-current="page">List Car</li>
-                                        <li class="breadcrumb-item active" aria-current="page">Add New Car</li>
-                                    </ol>
-                                </nav>
-                            </div>
-                            <h5>Add New Car</h2>
-                                <div class="form-body">
-                                    <form>
-                                        <div class="row">
-                                            <div class="col-lg-3">
-                                                <label for="inputName" class="col-form-label">Nama</label>
-                                                <label for="wajib" style="color: red">*</label>
-                                            </div>
-                                            <div class="col-lg-9">
-                                                <input type="text" id="inputNama6" class="form-control"
-                                                    placeholder="Nama" />
-                                                <small id="namaHelp" class="form-text text-muted"></small>
-                                            </div>
-                                        </div>
-
-                                        <div class="row">
-                                            <div class="col-lg-3">
-                                                <label for="inputPassword6" class="col-form-label">Harga</label>
-                                                <label for="wajib" style="color: red">*</label>
-                                            </div>
-                                            <div class="col-lg-9">
-                                                <input type="text" id="inputHarga6" class="form-control"
-                                                    placeholder="Harga" />
-                                                <small id="hargaHelp" class="form-text text-muted"></small>
-                                            </div>
-                                        </div>
-
-                                        <div class="row">
-                                            <div class="col-lg-3">
-                                                <label for="inputFoto6" class="col-form-label">Foto</label>
-                                                <label for="wajib" style="color: red">*</label>
-                                            </div>
-                                            <div class="col-lg-9">
-                                                <div class="input-group">
-                                                    <input class="form-control" type="file" id="formFile"
-                                                        style="display: none" onchange="getNameFile(this.value)" />
-                                                    <label for="formFile" id="file-input"
-                                                        class="form-control icon text-secondary">No file
-                                                        selected</label>
-                                                    <span class="input-group-text">
-                                                        <img src="./assets/fi_upload.png" />
-                                                    </span>
-                                                </div>
-                                                <small id="fileHelp" class="form-text text-muted"
-                                                    style="margin-left: 1px">File size max. 2 MB</small>
-                                            </div>
-                                        </div>
-
-                                        <div class="row">
-                                            <div class="col-lg-3">
-                                                <label for="inputStartRent6" class="col-form-label">Start Rent</label>
-                                            </div>
-                                            <div class="col-lg-9">
-                                                <span> - </span>
-                                                <span class="error-notif"></span>
-                                            </div>
-                                        </div>
-
-                                        <div class="row">
-                                            <div class="col-lg-3">
-                                                <label for="inputFinishRent6" class="col-form-label">Finish Rent</label>
-                                            </div>
-                                            <div class="col-lg-9">
-                                                <span> - </span>
-                                                <span class="error-notif"></span>
-                                            </div>
-                                        </div>
-
-                                        <div class="row">
-                                            <div class="col-lg-3">
-                                                <label for="inputCreatedRent6" class="col-form-label">Created
-                                                    Rent</label>
-                                            </div>
-                                            <div class="col-lg-9">
-                                                <span> - </span>
-                                                <span class="error-notif"></span>
-                                            </div>
-                                        </div>
-
-                                        <div class="row">
-                                            <div class="col-lg-3">
-                                                <label for="inputUpdatedRent6" class="col-form-label">Updated
-                                                    Rent</label>
-                                            </div>
-                                            <div class="col-lg-9">
-                                                <span> - </span>
-                                                <span class="error-notif"></span>
-                                            </div>
-                                        </div>
-                                    </form>
-                                </div>
-                        </div>
+<body>
+    <section id="page-5">
+        <div class="container pt-4">
+            <div class="row">
+                <div class="col-12">
+                    <div class="sub-tree d-flex mt-3 mb-3">
+                        <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);"
+                            aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item" aria-current="page">Cars</li>
+                                <li class="breadcrumb-item" aria-current="page">List Car</li>
+                                <li class="breadcrumb-item active" aria-current="page">Add New Car</li>
+                            </ol>
+                        </nav>
                     </div>
-                    <button type="button" class="btn-custom">Cancel</button>
-                    <button type="button" class="btn-custom-save">Save</button>
+                    <h5>Add New Car</h2>
+                        <div class="form-body">
+                            <form>
+                                <div class="row">
+                                    <div class="col-lg-3">
+                                        <label for="inputName" class="col-form-label">Nama</label>
+                                        <label for="wajib" style="color: red">*</label>
+                                    </div>
+                                    <div class="col-lg-9">
+                                        <input type="text" id="inputNama6" class="form-control" placeholder="Nama" />
+                                        <small id="namaHelp" class="form-text text-muted"></small>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-lg-3">
+                                        <label for="inputPassword6" class="col-form-label">Harga</label>
+                                        <label for="wajib" style="color: red">*</label>
+                                    </div>
+                                    <div class="col-lg-9">
+                                        <input type="text" id="inputHarga6" class="form-control" placeholder="Harga" />
+                                        <small id="hargaHelp" class="form-text text-muted"></small>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-lg-3">
+                                        <label for="inputFoto6" class="col-form-label">Foto</label>
+                                        <label for="wajib" style="color: red">*</label>
+                                    </div>
+                                    <div class="col-lg-9">
+                                        <div class="input-group">
+                                            <input class="form-control" type="file" id="formFile" style="display: none"
+                                                onchange="getNameFile(this.value)" />
+                                            <label for="formFile" id="file-input"
+                                                class="form-control icon text-secondary">No file
+                                                selected</label>
+                                            <span class="input-group-text">
+                                                <img src="../public/images/fi_upload.png" />
+                                            </span>
+                                        </div>
+                                        <small id="fileHelp" class="form-text text-muted" style="margin-left: 1px">File
+                                            size max. 2 MB</small>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-lg-3">
+                                        <label for="inputStartRent6" class="col-form-label">Start Rent</label>
+                                    </div>
+                                    <div class="col-lg-9">
+                                        <span> - </span>
+                                        <span class="error-notif"></span>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-lg-3">
+                                        <label for="inputFinishRent6" class="col-form-label">Finish Rent</label>
+                                    </div>
+                                    <div class="col-lg-9">
+                                        <span> - </span>
+                                        <span class="error-notif"></span>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-lg-3">
+                                        <label for="inputCreatedRent6" class="col-form-label">Created
+                                            Rent</label>
+                                    </div>
+                                    <div class="col-lg-9">
+                                        <span> - </span>
+                                        <span class="error-notif"></span>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-lg-3">
+                                        <label for="inputUpdatedRent6" class="col-form-label">Updated
+                                            Rent</label>
+                                    </div>
+                                    <div class="col-lg-9">
+                                        <span> - </span>
+                                        <span class="error-notif"></span>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
                 </div>
-            </section>
-        </body>
+            </div>
+            <button type="button" class="btn-custom">Cancel</button>
+            <button type="button" class="btn-custom-save">Save</button>
+        </div>
+    </section>
+</body>
 
 </html>

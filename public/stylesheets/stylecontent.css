@@ -95,16 +95,16 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
   border-top-width: 1px;
 }
 
-.btn-outline-primary {
+li.nav-item .btn-outline-primary {
   color: #0d28a6;
   border-color: #0d28a6;
   background-color: white;
 }
 
-.btn-outline-primary:hover {
-  color: #0d28a6;
+li.nav-item .btn-outline-primary:hover {
+  color: white;
   border-color: #0d28a6;
-  background-color: white;
+  background-color: #0d28a6;
 }
 
 .nav-item #profile-name {
@@ -236,7 +236,7 @@ a.page-link {
 
 /* *end dashboard */
 
-/* *cars */
+/* *listcars */
 .container-list-car {
   padding-left: 25px;
   padding-top: 27px;
@@ -263,6 +263,15 @@ span.list-car {
   font-size: 14px;
   height: 36px;
   width: 142px;
+}
+div.button-right a.btn.btn-primary:hover {
+  background-color: #1133c9;
+  border-radius: 2px;
+  font-weight: 700;
+  font-size: 14px;
+  height: 36px;
+  width: 142px;
+  color: white !important;
 }
 
 .btn.btn-outline-primary {
@@ -342,7 +351,7 @@ span.list-car {
   color: white;
 }
 
-/* * end cars */
+/* * end list-cars */
 
 /* * add new cars */
 
