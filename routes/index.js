@@ -10,4 +10,12 @@ router.get("/dashboard", function (req, res) {
   res.render("dashboard");
 });
 
+router.get("/cars", function (req, res) {
+  res.render("cars");
+});
+
+router.get("/addNewCar", function (req, res) {
+  res.render("addNewCar");
+});
+
 module.exports = router;
