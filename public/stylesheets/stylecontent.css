@@ -351,6 +351,38 @@ div.button-right a.btn.btn-primary:hover {
   color: white;
 }
 
+.modal .modal-dialog.modal-dialog-centered .modal-content {
+  border-radius: 4px !important;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+  padding: 24px 12px;
+  box-sizing: border-box;
+}
+
+.modal
+  .modal-dialog.modal-dialog-centered
+  .modal-content
+  .btn.btn-outline-primary {
+  border: 1px solid #0d28a6;
+  color: #0d28a6;
+  border-radius: 2px;
+  font-weight: 700;
+  background-color: white;
+  width: 87px;
+  height: 36px;
+  margin-left: 8px;
+}
+
+.modal .modal-dialog.modal-dialog-centered .modal-content .btn.btn-primary {
+  border: 1px solid #0d28a6;
+  color: white;
+  border-radius: 2px;
+  font-weight: 700;
+  background-color: #0d28a6;
+  width: 87px;
+  height: 36px;
+  margin-right: 8px;
+}
+
 /* * end list-cars */
 
 /* * add new cars */
