@@ -1,0 +1,156 @@
+@import url("style.css");
+
+/* *sidebar & nav  */
+#wrapper {
+  overflow-x: hidden;
+}
+
+sidebar-wrapper {
+  min-height: 100vh;
+  margin-left: -15rem;
+  transition: margin 0.25s ease-out;
+}
+
+#sidebar-wrapper .sidebar-heading {
+  padding: 0.875rem 1.25rem;
+  font-size: 1.2rem;
+}
+
+#sidebar-wrapper .list-group {
+  width: 1rem;
+}
+
+#page-content-wrapper {
+  min-width: 100vw;
+}
+
+body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
+  margin-left: 0;
+}
+
+@media (min-width: 768px) {
+  #sidebar-wrapper {
+    margin-left: 0;
+  }
+
+  #page-content-wrapper {
+    min-width: 0;
+    width: 100%;
+  }
+
+  body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
+    margin-left: -15rem;
+  }
+}
+/* * end sidebar & nav  */
+
+/* *login */
+.form-head {
+  margin-top: 120px;
+  padding-left: 55px !important;
+  padding-right: 55px !important;
+}
+
+.form-head h1 {
+  font-family: "helvetica";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  color: #000000;
+  margin-top: 24px;
+}
+
+.form-content {
+  padding-left: 55px !important;
+  padding-right: 55px !important;
+}
+
+.form-content button.btn.btn-primary {
+  width: 100%;
+  background: #0d28a6;
+  border-radius: 2px;
+  margin-top: 16px;
+}
+
+.form-content label {
+  font-family: "helvetica";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 20px;
+  color: #222222;
+}
+
+.form-content input {
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+/* *end login */
+
+/* *dashboard */
+thead {
+  background: #cfd4ed;
+}
+
+tbody {
+  background: white;
+}
+
+.container {
+  box-sizing: border-box;
+  padding-left: 24px;
+}
+
+.drop .form-select {
+  width: 62px;
+  height: 36px;
+  font-size: 12px;
+}
+
+.jtp .form-select {
+  width: 76px;
+  height: 36px;
+  font-size: 12px;
+}
+.paging nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+a.page-link {
+  height: 38px;
+  width: 38px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #8a8a8a;
+}
+.page-item.active .page-link {
+  background: #cfd4ed;
+  color: #0d28a6;
+  border-color: #0d28a6;
+}
+.form-select {
+  display: inline;
+}
+.jtp button.btn.btn-primary {
+  display: inline;
+  background: #0d28a6;
+  color: #fff;
+  width: 43px;
+  height: 36px;
+}
+
+.container h4 {
+  margin-bottom: 24px;
+}
+
+.container h5 {
+  margin-bottom: 16px;
+}
+
+/* *end dashboard */
