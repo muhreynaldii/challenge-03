@@ -126,6 +126,12 @@ li.nav-item .btn-outline-primary:hover {
 /* * end sidebar & nav  */
 
 /* *login */
+
+.login > * {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
 .form-head {
   margin-top: 120px;
   padding-left: 55px !important;
