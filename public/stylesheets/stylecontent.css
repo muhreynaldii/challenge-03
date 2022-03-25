@@ -505,3 +505,20 @@ input {
   margin: 0;
 }
 /* * end add new cars */
+
+.alert.alert-dark {
+  background-color: #151515;
+  color: white;
+  text-align: center;
+  width: 550px;
+  margin: 0 auto;
+  border-radius: 4px;
+}
+
+.alert.alert-success {
+  background-color: #73ca5c;
+  color: white;
+  text-align: center;
+  width: 550px;
+  margin: 0 auto;
+}

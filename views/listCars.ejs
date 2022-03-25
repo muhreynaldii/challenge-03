@@ -3,11 +3,22 @@
 
 <body>
     <div class="container-list-car">
-        <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http:/www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);"
+        <div class="alert alert-dark alert-dismissible" role="alert" id="myAlert">
+            Data Berhasil Dihapus
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+        <div class="alert alert-success alert-dismissible" role="alert" id="myAlert2">
+            Data Berhasil Disimpan
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+        <!-- <div class="alert alert-success alert-dismissible" role="alert" id="myAlert2">
+            Data Berhasil Dihapus
+        </div> -->
+        <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);"
             aria-label="breadcrumb">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item" aria-current="page">Cars</li>
-                <li class="breadcrumb-item active" aria-current="page">List Car</li>
+                <li class="breadcrumb-item" aria-current="page">List Car</li>
             </ol>
         </nav>
         <div class="list-button">
@@ -44,7 +55,7 @@
                                 data-bs-target="#reg-modal">
                                 <img src="../public/images/fi_trash-2.png" alt="icon-trash">Delete
                             </button>
-                            <button type="button" class="btn btn-success">
+                            <button type="button" class="btn btn-success" id="liveAlertBtn2">
                                 <img src="../public/images/fi_edit.png" alt="icon-edit">Edit
                             </button>
                         </div>
@@ -70,7 +81,7 @@
                                 data-bs-target="#reg-modal">
                                 <img src="../public/images/fi_trash-2.png" alt="icon-trash">Delete
                             </button>
-                            <button type="button" class="btn btn-success">
+                            <button type="button" class="btn btn-success" id="liveAlertBtn2">
                                 <img src="../public/images/fi_edit.png" alt="icon-edit">Edit
                             </button>
                         </div>
@@ -96,7 +107,7 @@
                                 data-bs-target="#reg-modal">
                                 <img src="../public/images/fi_trash-2.png" alt="icon-trash">Delete
                             </button>
-                            <button type="button" class="btn btn-success">
+                            <button type="button" class="btn btn-success" id="liveAlertBtn2">
                                 <img src="../public/images/fi_edit.png" alt="icon-edit">Edit
                             </button>
                         </div>
@@ -122,7 +133,7 @@
                                 data-bs-target="#reg-modal">
                                 <img src="../public/images/fi_trash-2.png" alt="icon-trash">Delete
                             </button>
-                            <button type="button" class="btn btn-success">
+                            <button type="button" class="btn btn-success" id="liveAlertBtn2">
                                 <img src="../public/images/fi_edit.png" alt="icon-edit">Edit
                             </button>
                         </div>
@@ -148,7 +159,7 @@
                                 data-bs-target="#reg-modal">
                                 <img src="../public/images/fi_trash-2.png" alt="icon-trash">Delete
                             </button>
-                            <button type="button" class="btn btn-success">
+                            <button type="button" class="btn btn-success" id="liveAlertBtn2">
                                 <img src="../public/images/fi_edit.png" alt="icon-edit">Edit
                             </button>
                         </div>
@@ -174,7 +185,7 @@
                                 data-bs-target="#reg-modal">
                                 <img src="../public/images/fi_trash-2.png" alt="icon-trash">Delete
                             </button>
-                            <button type="button" class="btn btn-success">
+                            <button type="button" class="btn btn-success" id="liveAlertBtn2">
                                 <img src="../public/images/fi_edit.png" alt="icon-edit">Edit
                             </button>
                         </div>
@@ -200,7 +211,7 @@
                                 data-bs-target="#reg-modal">
                                 <img src="../public/images/fi_trash-2.png" alt="icon-trash">Delete
                             </button>
-                            <button type="button" class="btn btn-success">
+                            <button type="button" class="btn btn-success" id="liveAlertBtn2">
                                 <img src="../public/images/fi_edit.png" alt="icon-edit">Edit
                             </button>
                         </div>
@@ -226,7 +237,7 @@
                                 data-bs-target="#reg-modal">
                                 <img src="../public/images/fi_trash-2.png" alt="icon-trash">Delete
                             </button>
-                            <button type="button" class="btn btn-success">
+                            <button type="button" class="btn btn-success" id="liveAlertBtn2">
                                 <img src="../public/images/fi_edit.png" alt="icon-edit">Edit
                             </button>
                         </div>
@@ -252,7 +263,7 @@
                                 data-bs-target="#reg-modal">
                                 <img src="../public/images/fi_trash-2.png" alt="icon-trash">Delete
                             </button>
-                            <button type="button" class="btn btn-success">
+                            <button type="button" class="btn btn-success" id="liveAlertBtn2">
                                 <img src="../public/images/fi_edit.png" alt="icon-edit">Edit
                             </button>
                         </div>
@@ -274,13 +285,58 @@
                             <p>Setelah dihapus, data mobil tidak dapat dikembalikan. Yakin ingin menghapus?</p>
                         </div>
                         <div class="d-flex justify-content-center">
-                            <button type="button" class="btn btn-primary">Ya</button>
+                            <button type="button" class="btn btn-primary" id="liveAlertBtn"
+                                data-bs-dismiss="modal">Ya</button>
                             <button type="button" class="btn btn-outline-primary" data-bs-dismiss="modal">Tidak</button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <script>
+            var alertTrigger = document.getElementById('liveAlertBtn')
+            var alertTrigger2 = document.getElementById('liveAlertBtn2')
+            var myAlert = document.getElementById('myAlert')
+            var myAlert2 = document.getElementById('myAlert2')
+
+            myAlert.style.display = 'none';
+            function alert() {
+                myAlert.style.display = 'block';
+            }
+
+            if (alertTrigger) {
+                alertTrigger.addEventListener('click', function () {
+                    alert()
+                })
+            }
+            // $(document).ready(function () {
+            //     window.setTimeout(function () {
+            //         $("#myAlert").fadeTo(500, 0).slideUp(500, function () {
+            //             $(this).remove();
+            //         });
+            //     }, 3000);
+            // });
+
+
+            myAlert2.style.display = 'none';
+            function myFunction(message) {
+                myAlert2.style.display = 'block';
+            }
+
+            if (alertTrigger2) {
+                alertTrigger2.addEventListener('click', function () {
+                    myFunction()
+                })
+            }
+            //     $(document).ready(function () {
+            //         window.setTimeout(function () {
+            //             $("#myAlert2").fadeTo(500, 0).slideUp(500, function () {
+            //                 $(this).remove();
+            //             });
+            //         }, 3000);
+            //     });
+            // }
+        </script>
 </body>
 
 </html>
